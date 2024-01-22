@@ -1,0 +1,69 @@
+:root {
+    --color1: #F2F1F0;
+    --color2: #261622;
+    --color3: #d9b0ca;
+    --color4: #F2BDE0;
+    --color5: #8C8C8C;
+    --fontColor: #181715;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    scrollbar-width: thin;
+        scrollbar-color: var(--color2) #ffffff;
+        &::-webkit-scrollbar {
+            width: 8px;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: var(--color3); /* Color del thumb */
+            border-radius: 10px;
+        }
+        &::-webkit-scrollbar-track {
+            background-color: var(--color1); /* Color de la pista (track) */
+            border-radius: 10px;
+        }
+  }
+
+* {
+    font-family: 'Barlow', sans-serif;
+    padding: 0;
+    margin: 0;
+    color: var(--fontColor);
+    letter-spacing: 2px;
+    user-select: none;
+}
+
+body {
+    background-color: var(--color1);
+    width: 100vw;
+    overflow-y: scroll;
+}
+
+.mainContainer {
+    margin-top: 90px;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.elementSelected {
+    border: 2px solid var(--color3);
+    padding: 0.5rem;
+    border-radius: 1rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-decoration: none;
+    text-align: center;
+    transition: .3s;
+    width: 150px;
+    margin: 5px;
+    background-color: var(--color3);
+    transform: scale(1.1);
+    transition: all .3s ease-in;
+}
+
+.hidden {
+    display: none;
+}

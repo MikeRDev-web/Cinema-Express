@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/src/img/iconmergeTransparent.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/filters.css">
+    <link rel="stylesheet" href="/css/moviesContainer.css">
+    <link rel="stylesheet" href="/css/movieCard.css">
+    <link rel="stylesheet" href="/css/modalContainer.css">
+    <title>Cinema Express</title>
+</head>
+
+<body>
+    <header class="header">
+        <span class="header__span">
+            <img src="/src/img/logotypeTranparent.png" alt="logo" class="header__logo">
+            <div class="search__section">
+                <input type="text" class="header__search" placeholder="Buscador" id="searchInput">
+                <ul class="header__search-results" id="searchResult">
+                  
+                </ul>
+            </div>
+        </span>
+        <nav class="header__nav">
+            <a href="#" class="header__nav--a" title="Todas las plataformas" data-platform="allPlatforms">
+                <img src="/src/plataformsIcons/allPlatforms.png" alt="" class="allPlatforms">
+            </a>
+            <a href="#" class="header__nav--a" title="Netflix" data-platform="Netflix">
+                <img src="/src/plataformsIcons/netflix.svg" alt="">
+            </a>
+            <a href="#" class="header__nav--a" title="Amazon Prime Video" data-platform="Amazon prime video">
+                <img src="/src/plataformsIcons/amazon-prime-video.svg" alt="">
+            </a>
+            <a href="#" class="header__nav--a" title="Apple TV" data-platform="Apple Tv">
+                <img src="/src/plataformsIcons/apple-tv.svg" alt="">
+            </a>
+            <a href="#" class="header__nav--a" title="Disney+" data-platform="Disney Plus">
+                <img src="/src/plataformsIcons/disney-plus.svg" alt="">
+            </a>
+            <a href="#" class="header__nav--a" title="Disney+" data-platform="Star Plus">
+                <img src="/src/plataformsIcons/starPlus.svg" alt="">
+            </a>
+            <a href="#" class="header__nav--a" title="HBOMax" data-platform="HBO Max">
+                <img src="/src/plataformsIcons/hbo-max.svg" alt="">
+            </a>
+            <a href="#" class="header__nav--a" title="Paramout+" data-platform="Paramout Plus">
+                <img src="/src/plataformsIcons/paramoutPlus.svg" alt="">
+            </a>
+        </nav>
+    </header>
+
+    <main id="main" class="mainContainer">
+        <nav class="filters" id="filters">
+                <div class="type" id="typeContainer">
+                    <a href="#" class="filters__btn-type" id="typeMovie">Peliculas</a>
+                    <a href="#" class="filters__btn-type" id="typeSeries">Series</a>
+                    <a href="#" class="filters__btn-type" id="typeAll">Todas</a>
+                </div>
+                <div class="gender" id="genderContainer">
+                    <a href="#" class="filters__btn">Acción</a>
+                    <a href="#" class="filters__btn">Comedia</a>
+                    <a href="#" class="filters__btn">Drama</a>
+                    <a href="#" class="filters__btn">Ciencia ficción</a>
+                    <a href="#" class="filters__btn">Terror</a>
+                    <a href="#" class="filters__btn">Thriller</a>
+                    <a href="#" class="filters__btn">Crimen</a>
+                    <a href="#" class="filters__btn">Romance</a>
+                    <a href="#" class="filters__btn">Aventura</a>
+                    <a href="#" class="filters__btn">Animación</a>
+                    <a href="#" class="filters__btn">Misterio</a>
+                    <a href="#" class="filters__btn">Musical</a>
+                    <a href="#" class="filters__btn">Documental</a>
+                </div>
+        </nav>
+        <div class="modalContainer" id="modalContainer">
+           
+        </div>
+        <section class="moviesContainer" id="moviesContainer"> 
+             
+        </section>
+    </main>
+
+
+    <footer>
+        <span>
+            <img src="/src/img/iconmergeTransparent.jpg" alt="logo" class="footer__logo">
+            <p class="footer__text">Cinema Express © </p>
+            <div class="socialMedia">
+                <a href="#" target="_blank">
+                    <img src="/src/icons/facebook.svg" alt="facebook" class="socialMediaIcon">
+                </a>
+                <a href="#" target="_blank">
+                    <img src="/src/icons/twitterXLine.svg" alt="facebook" class="socialMediaIcon">
+                </a>
+            </div>
+        </span>
+    </footer>
+    <!--<img src="/src/plataformsIcons/amazon-prime-video.svg" alt="plataform" class="item__platforms-icon">-->
+    <script src="/js/search.js" type="module"></script>
+    <script src="/js/app.js" type="module"></script>
+</body>
+
+</html>

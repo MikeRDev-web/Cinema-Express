@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/src/img/iconmergeTransparent.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/filters.css">
+    <link rel="stylesheet" href="/css/moviesContainer.css">
+    <link rel="stylesheet" href="/css/movieCard.css">
+    <link rel="stylesheet" href="/css/viewItem.css">
+    <link rel="stylesheet" href="/css/loading.css">
+    <title>Cinema Express</title>
+</head>
+
+<body>
+    <header class="header">
+        <span class="header__span">
+            <a href="./principal.html" class="header__logo">
+                <img src="/src/img/logotypeTranparent.png" alt="logo" class="header__logo">
+            </a>
+            <div class="search__section">
+                <input type="text" class="header__search" placeholder="Buscador" id="searchInput">
+                <ul class="header__search-results" id="searchResult">
+                  
+                </ul>
+            </div>
+        </span>
+        <nav class="header__nav">
+            <a href="#" class="header__nav--a" title="Netflix" data-platform="Netflix">
+                <img src="/src/plataformsIcons/netflix.svg" alt="">
+            </a>
+            <a href="#" class="header__nav--a" title="Amazon Prime Video" data-platform="Amazon prime video">
+                <img src="/src/plataformsIcons/amazon-prime-video.svg" alt="">
+            </a>
+            <a href="#" class="header__nav--a" title="Apple TV" data-platform="Apple Tv">
+                <img src="/src/plataformsIcons/apple-tv.svg" alt="">
+            </a>
+            <a href="#" class="header__nav--a" title="Disney+" data-platform="Disney Plus">
+                <img src="/src/plataformsIcons/disney-plus.svg" alt="">
+            </a>
+            <a href="#" class="header__nav--a" title="Disney+" data-platform="Star Plus">
+                <img src="/src/plataformsIcons/starPlus.svg" alt="">
+            </a>
+            <a href="#" class="header__nav--a" title="HBOMax" data-platform="HBO Max">
+                <img src="/src/plataformsIcons/hbo-max.svg" alt="">
+            </a>
+            <a href="#" class="header__nav--a" title="Paramout+" data-platform="Paramout Plus">
+                <img src="/src/plataformsIcons/paramoutPlus.svg" alt="">
+            </a>
+        </nav>
+    </header>
+    <main class="mainContainer">
+        <div class="loading" id="loading">
+            <img src="/src/icons/loading.svg" alt="loading" class="loadingIcon">
+        </div>
+        <a href="../pages/principal.html" title="Volver atrás" class="backBtn">
+            <img src="/src/icons/back.svg" alt="ir atras" class="backIcon">
+        </a>
+       <section class="item" id="itemContainer">
+          
+       </section>
+       <section class="relatedContent">
+           <h2 class="relatedContent__title">Contenido igual o similar</h2>
+            <div class="relatedContent__cardsContainer" id="relatedContentCardsContainer">
+                
+            </div>
+       </section>
+       <section class="filterPlatforms">
+        <div class="filterPlatforms__cards" id="filtredContainer">
+
+        </div>
+       </section>
+    </main>
+
+
+    <footer>
+        <span>
+            <img src="/src/img/iconmergeTransparent.jpg" alt="logo" class="footer__logo">
+            <p class="footer__text">Cinema Express © </p>
+            <div class="socialMedia">
+                <a href="#" target="_blank">
+                    <img src="/src/icons/facebook.svg" alt="facebook" class="socialMediaIcon">
+                </a>
+                <a href="#" target="_blank">
+                    <img src="/src/icons/twitterXLine.svg" alt="facebook" class="socialMediaIcon">
+                </a>
+            </div>
+        </span>
+    </footer>
+    <script src="/js/search.js" type="module"></script>
+    <script src="/js/viewItem.js" type="module"></script>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/src/img/iconmergeTransparent.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/general.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="/css/welcomemsg.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <title>Cinema Express</title>
+</head>
+
+<body>
+    <header class="header">
+        <span class="header__span">
+            <img src="/src/img/logotypeTranparent.png" alt="logo" class="header__logo">
+            <div class="search__section">
+                <input type="text" class="header__search" placeholder="Buscador" id="searchInput">
+                <ul class="header__search-results" id="searchResult">
+                </ul>
+            </div>
+        </span>
+        <nav class="header__nav">
+            <a href="#" class="header__nav--a">Inicio</a>
+            <a href="#" class="header__nav--a">Estrenos</a>
+            <a href="#" class="header__nav--a">Login</a>
+        </nav>
+    </header>
+    <main>
+        <section class="welcomeMsg">
+            <h1 class="welcomeMsg-h1">
+                Bienvenido a <span class="cursiveLetter">Cinema Express</span>
+            </h1>
+                <p class="welcomeMsg-description">
+                    En <span class="cursiveLetter">Cinema Express</span> te ofrecemos un amplio catálogo de películas. Nos dedicamos especialmente a facilitarte la búsqueda de las plataformas donde podrás disfrutarlas.
+                </p>
+
+                <a href="/pages/principal.html" class="welcomeMsg-btn">Entrar</a>
+            </section>
+    </main>
+    <footer>
+        <span>
+            <img src="/src/img/iconmergeTransparent.jpg" alt="logo" class="footer__logo">
+            <p class="footer__text">Cinema Express © </p>
+            <div class="socialMedia">
+                <a href="#" target="_blank">
+                    <img src="/src/icons/facebook.svg" alt="facebook" class="socialMediaIcon">
+                </a>
+                <a href="#" target="_blank">
+                    <img src="/src/icons/twitterXLine.svg" alt="facebook" class="socialMediaIcon">
+                </a>
+            </div>
+        </span>
+    </footer>
+    <script src="/js/search.js" type="module"></script>
+</body>
+
+</html>

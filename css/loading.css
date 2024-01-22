@@ -1,0 +1,11 @@
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0; /* Elimina el margen para centrar completamente */
+}
+
+.loadingIcon {
+    width: 200px;
+    height: 200px;
+}
